@@ -17,7 +17,7 @@ The Apache default page was accessible over HTTP, confirming the service was pub
 ![Apache default page](screenshots/01-default-page.png)
 
 ### Directory Listing Exposure
-Navigating to the `/backups/` directory exposed its contents because directory listing is enabled in the Apache configuration for `/var/www/`. The `/backups/` subdirectory contains fake lab files. This demonstrates how default Apache configuration settings can expose files in subdirectories.
+Navigating to `http://<IP>/backups/` directory exposed its contents because directory listing is enabled in the Apache configuration for `/var/www/`. The `/backups/` subdirectory contains fake lab files. This demonstrates how default Apache configuration settings can unintentionally expose files in subdirectories.
 
 ![Directory listing](screenshots/02-directory-listing.png)
 
@@ -46,6 +46,6 @@ To prevent directory listing, remove `Indexes` from Apache configuration for the
 
 ## Restart Apache server
 Use `sudo systemctl restart apache2` to restart Apache. 
-When navigating to the /backups subdirectory, unauthenticated access should now be forbidden.
+Now, when navigating to http://<IP>/backups, unauthenticated access is now forbidden.
 
 ![403](screenshots/04-403-forbidden.png)
