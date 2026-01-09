@@ -8,7 +8,6 @@ This lab demonstrates how Apache’s default configuration enables directory lis
 ## Environment
 - Ubuntu Server
 - Apache2
-- Publicly accessible HTTP service
 
 ## Proof of Concept
 
@@ -18,7 +17,7 @@ The Apache default page was accessible over HTTP, confirming the service was pub
 ![Apache default page](screenshots/01-default-page.png)
 
 ### Directory Listing Exposure
-Navigating to the `/backups/` directory exposed its contents because directory listing is enabled in `/var/www/`. The `/backups/` folder contains fake lab files. This demonstrates how default Apache configuration settings can reveal files in subdirectories.
+Navigating to the `/backups/` directory exposed its contents because directory listing is enabled in the Apache configuration for `/var/www/`. The `/backups/` subdirectory contains fake lab files. This demonstrates how default Apache configuration settings can expose files in subdirectories.
 
 ![Directory listing](screenshots/02-directory-listing.png)
 
