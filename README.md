@@ -46,6 +46,6 @@ To prevent directory listing, remove `Indexes` from Apache configuration for the
 
 ## Restart Apache server
 Use `sudo systemctl restart apache2` to restart Apache. 
-Now, when navigating to http://<IP>/backups, unauthenticated access is now forbidden.
+Now, when navigating to `http://<IP>/backups`, unauthenticated access is now forbidden.
 
 ![403](screenshots/04-403-forbidden.png)
