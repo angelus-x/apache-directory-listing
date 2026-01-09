@@ -42,8 +42,11 @@ To prevent directory listing, remove `Indexes` from Apache configuration for the
     AllowOverride None
     Require all granted
 </Directory>
+```
 
 
 ## Restart Apache server
-Use `sudo systemctl restart apache2` to restart Apache.
+Use `sudo systemctl restart apache2` to restart Apache. 
+When navigating to the /backups subdirectory, unauthenticated access should now be forbidden.
 
+![](screenshots/04-403-forbidden.png)
