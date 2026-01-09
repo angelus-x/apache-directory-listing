@@ -18,11 +18,10 @@ The Apache default page was accessible over HTTP, confirming the service was pub
 ![Apache default page](screenshots/01-default-page.png)
 
 ### Directory Listing Exposure
-Navigating to the `/backups/` directory exposed its contents because directory listing is enabled in `/var/www/`. The `/backups/` folder contains lab files with fake credentials, while `/html/` shows the default Apache page. This demonstrates how default Apache settings can reveal files in subdirectories.
+Navigating to the `/backups/` directory exposed its contents because directory listing is enabled in `/var/www/`. The `/backups/` folder contains lab files with fake credentials. This demonstrates how default Apache configuration settings can reveal files in subdirectories.
 
 ![Directory listing](screenshots/02-directory-listing.png)
 
-**Note:** Apache’s default configuration enables directory listing. The vulnerability arises from the combination of default listing and sensitive files present in the web root.
 
 ### Configuration
 Directory indexing is controlled by the `Options Indexes` directive in Apache’s configuration.
