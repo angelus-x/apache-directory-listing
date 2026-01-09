@@ -1,9 +1,9 @@
 # apache-directory-listing
-This is a self‑built lab environment created to demonstrate Apache directory listing behavior and remediation.
+Self-built Apache directory listing lab demonstrating default behaviour and remediation.
 # Apache Directory Listing
 
 ## Overview
-This lab demonstrates how Apache’s default configuration enables directory listing, and how this can expose sensitive files. While directory listing itself is default behavior, the presence of sensitive files makes this a security concern.
+This lab demonstrates how Apache’s default configuration enables directory listing, and how this can expose sensitive files. While directory listing itself is default behaviour, the presence of sensitive files makes this a security concern.
 
 ## Environment
 - Ubuntu Server
@@ -17,7 +17,7 @@ The Apache default page was accessible over HTTP, confirming the service was pub
 ![Apache default page](screenshots/01-default-page.png)
 
 ### Directory Listing Exposure
-Navigating to `http://<IP>/backups/` directory exposed its contents because directory listing is enabled in the Apache configuration for `/var/www/`. The `/backups/` subdirectory contains fake lab files. This demonstrates how default Apache configuration settings can unintentionally expose files in subdirectories.
+Navigating to `http://<IP>/backups/` directory exposed its contents, as directory listing is enabled in the Apache configuration for `/var/www/`. The `/backups/` subdirectory contains fake lab files. This demonstrates how default Apache configuration settings can unintentionally expose files in subdirectories.
 
 ![Directory listing](screenshots/02-directory-listing.png)
 
