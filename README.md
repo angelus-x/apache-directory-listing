@@ -1,9 +1,9 @@
 # apache-directory-listing
-Lab demonstrating Apache default directory listing and potential exposure of sensitive files
+This is a self‑built lab environment created to demonstrate Apache directory listing behavior and remediation.
 # Apache Directory Listing
 
 ## Overview
-This lab demonstrates how Apache’s default configuration enables directory listing, and how this can expose sensitive files placed under the web root. While directory listing itself is default behavior, the presence of sensitive files makes this a security concern.
+This lab demonstrates how Apache’s default configuration enables directory listing, and how this can expose sensitive files. While directory listing itself is default behavior, the presence of sensitive files makes this a security concern.
 
 ## Environment
 - Ubuntu Server
