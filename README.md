@@ -43,3 +43,7 @@ To prevent directory listing, remove `Indexes` from Apache configuration for the
     Require all granted
 </Directory>
 
+
+## Restart Apache server
+Use `sudo systemctl restart apache2` to restart Apache.
+
