@@ -18,7 +18,7 @@ The Apache default page was accessible over HTTP, confirming the service was pub
 ![Apache default page](screenshots/01-default-page.png)
 
 ### Directory Listing Exposure
-Navigating directly to a directory without an index file resulted in a directory listing, exposing sensitive files intentionally placed for this lab.
+Navigating to the `/backups/` directory exposed its contents because directory listing is enabled in `/var/www/`. The `/backups/` folder contains lab files with fake credentials, while `/html/` shows the default Apache page. This demonstrates how default Apache settings can reveal files in subdirectories.
 
 ![Directory listing](screenshots/02-directory-listing.png)
 
